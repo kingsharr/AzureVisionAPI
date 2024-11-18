@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+</head>
+<body>
+    <h1>API Documentation</h1>
+
+    <section>
+        <h2>Overview</h2>
+        <p>
+            This API allows you to analyze images by sending a GET request to the endpoint.
+        </p>
+    </section>
+
+    <section>
+        <h2>API Endpoint</h2>
+        <p>
+            The API is accessible at: <code>http://localhost:3000/api/v1/analysis/</code>
+        </p>
+    </section>
+
+    <section>
+        <h2>Request</h2>
+        <p>
+            To analyze an image, send a GET request with a JSON object containing a single field <code>"uri"</code> pointing to the image to be analyzed.
+        </p>
+        <pre>
+            <code>
+{
+    "uri": "path/to/your/image.jpg"
+}
+            </code>
+        </pre>
+    </section>
+
+</body>
+</html>
