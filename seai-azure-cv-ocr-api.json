@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "8e2e46af-c8ba-4e94-83fb-96a476c1e98c",
+		"name": "seai",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://seai-image-caption.cognitiveservices.azure.com/vision/v3.2/ocr?language=en&detectOrientation=true&model-version=latest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Ocp-Apim-Subscription-Key",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"url\":\"http://jeroen.github.io/images/testocr.png\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://seai-image-caption.cognitiveservices.azure.com/vision/v3.2/ocr?language=en&detectOrientation=true&model-version=latest",
+					"protocol": "https",
+					"host": [
+						"seai-image-caption",
+						"cognitiveservices",
+						"azure",
+						"com"
+					],
+					"path": [
+						"vision",
+						"v3.2",
+						"ocr"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "en"
+						},
+						{
+							"key": "detectOrientation",
+							"value": "true"
+						},
+						{
+							"key": "model-version",
+							"value": "latest"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
