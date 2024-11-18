@@ -1,3 +1,0 @@
-Flask
-azure-cognitiveservices-vision-computervision
-python-dotenv
